@@ -1,0 +1,165 @@
+@import '../common.scss';
+
+.logg{
+    display: fixed;
+    left: 0;
+    right: 0;
+    top: 0;bottom:0;
+  //  background: gray;
+    height: 100%;
+   
+box-sizing: content-box;
+   .logg-main{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       @include padding(0,20,0,20);
+       .bot{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include margin(100,0,0,0);
+       }
+        .login-btn{
+            width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include h(40);
+        @include fs(17);
+        color: white;
+        border-radius: 3px;
+        background: #e44034;
+        box-shadow: 0 0.9px 0.9px  #e44034;
+        }
+        .to-reg{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            @include h(30);
+        }
+       .login-input{
+        @include h(40);
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:white;
+        @include margin(0,0,30,0);
+        span{
+           // @include margin(0,0,30,-10);
+            flex: 1;
+            height: 100%;
+            text-align: center;
+            @include lh(40)
+        }
+        input{
+            flex: 3;
+            height: 100%;
+            border:0;
+        }
+       }
+       img{
+           @include w(120);
+           height: auto;
+           @include margin(30,0,30,0);
+       }
+   }
+    .logg-top{
+        @include padding(0,10,0,10);
+        width: 100%;
+        @include h(49);
+        display: flex;
+        justify-content: flex-end;
+        @include lh(60);
+        border-bottom: 0.5px solid rgba(0,0,0,.3);
+
+        .backmy{   
+
+            @include fs(19);
+            text-align: right;
+            color: #696969;
+            margin-right:30px;
+        }
+    }
+}
+
+//reg
+.reg{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    right: 0;
+    top:0;
+    bottom: 0;
+    left: 0;
+    background:white;
+    .reg-main{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+       
+        @include padding(0,10,0,10);
+        input{
+            border:0;
+            @include fs(15); 
+            @include padding(0,10,0,10);
+            border-bottom: 0.5px solid rgba(0,0,0,.3);
+            @include h(42);
+       
+        }
+    }
+    .checkbox{
+        @include margin(30,0,0,0);
+        display: flex;
+        align-items: center;
+        @include padding(0,20,0,20);
+       input{
+        @include margin(0,8,0,5);
+       }
+    }
+    .reg-btn{
+        @include margin(40,0,0,0);
+        @include h(36);
+        text-align: center;
+        @include lh(36);
+        @include padding(0,20,0,20);
+       div{
+        border-radius:18px;
+        color:white;
+        @include fs(18); 
+        background: #ff1734;
+        box-shadow: #ff1734 1px 1px 2px;
+       }
+    }
+    .reg-top{
+        @include margin(0,0,10,0);
+       // @include padding(0,10,0,10);
+        width: 100%;
+        @include h(49);
+        display: flex;
+        span{
+            @include margin(0,0,0,110);
+        }
+        @include lh(49);
+        text-align: center;
+        align-items: center;
+        .ic{
+            @include lh(49); 
+            @include h(30);
+            @include fs(25); 
+        }
+        span{
+            @include fs(19);
+        }
+        border-bottom: 0.5px solid rgba(0,0,0,.3);
+    }
+}

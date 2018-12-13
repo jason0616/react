@@ -1,0 +1,254 @@
+@import './common';
+
+.goods-item{
+    padding:10px;font-size:14px;
+    img{display:block;margin:0 auto 10px;width:80%;}
+    p{margin:5px 0;}
+}
+.am-carousel{
+    @include h(288);
+}
+
+.home{
+    main{
+        nav{
+
+            @include h(288);
+            display: flex;
+            
+            justify-content: space-between;
+            align-items: center;
+            @include padding(30,10,10,10);
+            .nav-left{
+                flex: 1;
+                height: 100%;
+                overflow: hidden;
+                background:  url('http://image.zeststore.com/tmp%2F20180919%2Ftmp_1537321311034883_index_20.png') center !important;
+                // background-size: 100px 100px ;
+                img{
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+            .nav-right{
+                flex: 1;
+                .nav-right-top{
+                }
+                .nav-right-bottom{ 
+                }
+            }
+        }
+    }
+    .home-item{
+        .home-search{
+            @include h(30);
+            @include w(30);
+            @include lh(30);
+            text-align: center;
+            border-radius: 30px;
+            background: rgba(0,0,0,.3)
+        }
+  @include h(70);
+    position: absolute;
+    .fnt{
+        @include fs(18);
+    }
+    right: 0;top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    @include fs(18);
+    padding: 0 0.4rem;
+    justify-content: space-between;
+    align-items: center;
+    .item-right-div{
+
+    }
+    .item-right{
+            display: flex;justify-content: center;
+            align-items: center;
+    }
+    .right-l{
+     
+        @include margin(0,10,0,0)
+    }
+    }
+    .zlife{
+        width: 9.333333rem;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        font-size: 0.64rem;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        margin: 0rem auto 0.8rem;
+        font-family: "Source Han Sans CN Light", "STHeiti", "STHeiti Light", "Microsoft YaHei", "Microsoft JhengHei";
+        p{
+         
+        }
+    .life{
+        font-weight: 600;
+    }
+    .zstyle{
+        height: 0.5rem;
+        font-size: 0.4rem;
+        color: #8a8a8a;
+        font-weight: normal;
+    }
+    }
+    
+}
+.taoxi_box{
+    height: 9.066667rem;
+    margin-left: 0.333333rem;
+    font-family: "Source Han Sans CN Light", "STHeiti", "STHeiti Light", "Microsoft YaHei", "Microsoft JhengHei";
+
+    .title{
+      
+    }
+}
+.taoxi_box .title {
+    width: 9.333333rem;
+    margin: 0 0 0.506667rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #8a8a8a;
+    font-size: 0.32rem;
+}
+.taoxi_box .title .big_title {
+    font-size: 0.533333rem;
+    color: #505050;
+}
+.taoxi_box .title .small_title {
+    font-size: 0.48rem;
+    color: #8a8a8a;
+}
+.taoxi_box .title .big_num {
+    color: #5fdd9a;
+    font-size: 0.533333rem;}
+    .taoxi_box .title .small_num {
+        color: #8a8a8a;
+        font-size: 0.4rem;
+}
+.my{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    .my-top{
+        @include h(210);
+        overflow: hidden;
+        position: relative;
+        .log{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include h(100);
+            @include w(93);
+            position: absolute;
+            top:50%;
+            left: 50%;
+            img{
+                margin-bottom: 10px;
+                border-radius: 20px;
+            }
+            color: white;
+            transform: translate(-46px,-70px)
+        }
+    }
+    .my-bottom{
+        @include padding(0,10,0,10);
+        box-sizing: content-box;
+        display:flex;
+        @include w(355);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      overflow: hidden;
+      
+        .my-home{   
+            @include w(355);
+            @include h(120);
+            // @include top(30);
+            //box-sizing: content-box;
+           margin:0,0,0,0 !important;
+           padding: 0,0,0,0 !important;
+            // @include padding(0,10,0,10) ;
+
+            overflow: hidden;
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .detail{
+                // width: 100%;
+                position: fixed;
+                @include w(355);
+              top:150px;
+              z-index: 99999;
+                box-sizing: content-box;
+                @include margin(0,0,0,0);
+                border-radius: 5px;
+                @include h(120);
+                background:white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                text-align: center;
+                align-items: center;
+                .detail-top{
+                    text-align: center;
+                    display: flex;
+                    width: 100%;
+                    flex: 1;
+                    div{
+                        flex: 1;
+                        // margin-right: 10px;
+                    }
+                    span{
+                        flex: 1;
+                    }
+                    justify-content: center;
+                    align-items: center;
+                }
+                .detail-bottom{
+                    div{
+                        flex: 1;
+                    }
+                    .see{
+                 
+                        // text-align: left!important;
+                        align-self: left;
+                    }
+                    .line{
+                        position: absolute;
+                        left:53%;
+                    }
+                    width: 100%;
+                    flex: 1;
+                    display: flex;
+                    text-align: center;
+                   justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+}

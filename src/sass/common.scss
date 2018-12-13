@@ -1,0 +1,69 @@
+html,body{height:100%}
+
+#root,.container{@extend body;}
+.container{display:flex;flex-direction: column;}
+.container>.content{flex:1;overflow-y:auto;}
+.container>.am-tab-bar{height:50px;}
+
+.price span{color:#f00}
+.price span::before{content:'￥';}
+
+html,body{height:100%}
+@mixin w($a){
+    width: $a/37.5*1rem;
+}
+@mixin h($a){
+    height: $a/37.5*1rem;
+}
+@mixin lh($a){
+    line-height: $a/37.5*1rem;
+}
+@mixin fs($a){
+    font-size: $a/37.5*1rem;
+}
+
+@mixin bottom($a){
+    bottom: $a/37.5*1rem;
+}
+
+@mixin margin($a,$b,$c,$d){
+    margin: $a/37.5*1rem $b/37.5*1rem
+    $c/37.5*1rem $d/37.5*1rem
+    ;
+}
+@mixin padding($a,$b,$c,$d){
+    padding: $a/37.5*1rem $b/37.5*1rem
+    $c/37.5*1rem $d/37.5*1rem
+    ;
+}
+.am-tab-bar{
+overflow: auto;
+}
+.am-carousel{
+
+    height: 6rem !important;
+}
+.slider-decorator-0{
+    bottom:0.133rem !important;
+}
+// @mixin padding($a ,$b ,$c ,$d){
+//     padding: $a/37.5*1rem  $b/37.5*1rem   $c/37.5*1rem  $d/37.5*1rem ;
+// }
+
+#root,.container{@extend body;}
+.container{display:flex;flex-direction: column;}
+.container>.content{flex:1;overflow-y:auto;}
+.container>.am-tab-bar{@include h(50);
+
+.am-tab-bar-bar{
+height: 100%;
+}
+}
+.am-tabs-tab-bar-wrap{
+    height: 100%;
+}
+.am-tab-bar-bar-hidden-bottom {
+    bottom:0;
+}
+.price span{color:#f00}
+.price span::before{content:'￥';}

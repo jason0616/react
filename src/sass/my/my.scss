@@ -1,0 +1,78 @@
+@import '../common.scss';
+.mtop{
+    position: absolute;
+    top:10px;
+    display: flex;
+    @include h(30);
+    z-index: 9999;
+    right: 20px;
+    color: white;
+}
+.orders{
+    @include w(355);
+    overflow: hidden;
+    @include h(140);
+    background:white;
+    display: flex;
+    @include margin(75,0,0,0);
+    border-radius: 5px;
+    //width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    span{  color:gray!important;}
+    a{
+        flex: 1;
+        align-items: center;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span{
+            margin-top:8px;
+        }
+    }
+    .ga{
+        @include h(19);
+        @include w(19);
+    }
+    .orders-top{
+        flex:1;
+        display: flex;
+        justify-content: center;
+        a{
+            
+        }
+      
+    }
+    .orders-bottom{
+      
+        flex:1;
+        display: flex;
+        overflow: hidden;
+        justify-content:space-between!important;
+        a{
+            flex: 1;
+            align-items: center;
+    
+            display: flex;
+            &:first-child{
+             @include margin(0,0,0,-85)
+            }
+            &:last-child{
+                @include margin(0,-90,0,0);
+                span{
+                    color:red
+                }
+               }
+            
+        }
+       
+    }
+}
+.ob2 {
+    @include margin(20,0,0,0);
+}
+a{
+color:white
+}
